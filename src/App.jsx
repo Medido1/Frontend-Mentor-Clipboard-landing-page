@@ -1,10 +1,11 @@
 import './App.css'
+import Header from './components/Header'
 
 function App() {
   return (
-    <h1>
-      test
-    </h1>
+    <main className='min-h-[100vh] w-full font-[barlow]'>
+      <Header />
+    </main>
   )
 }
 
