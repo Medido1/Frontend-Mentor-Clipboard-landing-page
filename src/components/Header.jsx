@@ -3,7 +3,7 @@ import logo from "../assets/images/logo.svg";
 
 function Header() {
   return (
-    <div className="h-40 flex flex-col items-center p-6 text-center"
+    <div className="flex flex-col items-center p-6 text-center bg-[length:full_50%] bg-no-repeat"
       style={{backgroundImage: `url(${bgMobile})`}}>
         <img src={logo} alt="logo" />
         <h1 className="mt-16 mb-4 text-3xl font-bold">
