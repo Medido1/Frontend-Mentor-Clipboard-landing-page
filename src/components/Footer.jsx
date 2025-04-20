@@ -6,10 +6,10 @@ import instagramIcon from "../assets/images/icon-instagram.svg"
 function Footer() {
   return (
     <footer className="bg-gray-100 mt-20 pt-8 flex flex-col items-center
-    md:grid md:grid-cols-[1fr_2fr_1fr] md:px-16 md:pb-8">
-      <img src={logo} alt="logo" className="max-w-10 md:max-w-12 mb-6" />
+    md:grid md:grid-cols-[.5fr_2fr_.8fr] md:px-16 md:pb-8 lg:mt-40">
+      <img src={logo} alt="logo" className="max-w-10 md:max-w-12 mb-6 lg:mb-0" />
       <ul className="text-center flex flex-col gap-4 text-gray-500 mb-4
-      md:grid md:grid-cols-2 md:mb-0 md:text-left">
+      md:grid md:grid-cols-2 md:mb-0 md:text-left lg:grid-cols-3">
         <li><a href="">FAQs</a></li>
         <li><a href="">Contact Us</a></li>
         <li><a href="">Privacy Policy</a></li>
