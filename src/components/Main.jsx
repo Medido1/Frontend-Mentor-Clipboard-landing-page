@@ -12,35 +12,38 @@ import vgLogo from "../assets/images/logo-vector-graphics.png";
 function Main() {
   return (
     <div className="flex flex-col items-center px-6 text-center mt-20">
-      <p className="text-3xl font-bold mb-4">
-        Keep track of your snippets
-      </p>
-      <p className="text-gray-400 pb-16">
-        Clipboard instantly stores any item you copy in the cloud, 
-        meaning you can access your snippets immediately on all your 
-        devices. Our Mac and iOS apps will help you organize everything.
-      </p>
-      <div className="mb-40">
-        <img src={computerImg} alt="computer" className="mb-10"/>
-        <div>
-          <div className="mb-12">
-            <p className="text-3xl font-bold text-gray-600 mb-2">
+      <div className="md:max-w-3/2 lg:max-w-1/3">
+        <p className="text-3xl font-bold mb-4">
+          Keep track of your snippets
+        </p>
+        <p className="text-gray-400 pb-16">
+          Clipboard instantly stores any item you copy in the cloud, 
+          meaning you can access your snippets immediately on all your 
+          devices. Our Mac and iOS apps will help you organize everything.
+        </p>
+      </div>
+      <div className="mb-40 md:flex md:gap-20">
+        <img src={computerImg} alt="computer" 
+        className="mb-10 md:max-w-3/5 md:ml-[-10vw]"/>
+        <div className="md:text-left md:mt-2">
+          <div className="mb-12 md:max-w-3/4 md:mb-6">
+            <p className="text-2xl font-bold text-gray-600 mb-2">
               Quick Search
             </p>
             <p className="text-gray-400">
               Easily search your snippets by content, category, web address, application, and more.
             </p>
           </div>
-          <div div className="mb-12">
-            <p className="text-3xl font-bold text-gray-600 mb-2">
+          <div div className="mb-12 md:max-w-3/4 md:mb-6">
+            <p className="text-2xl font-bold text-gray-600 mb-2">
               iCloud Sync
             </p>
             <p className="text-gray-400">
               Instantly saves and syncs snippets across all your devices.
             </p>
           </div>
-          <div>
-            <p className="text-3xl font-bold text-gray-600 mb-2">
+          <div className="md:max-w-3/4">
+            <p className="text-2xl font-bold text-gray-600 mb-2">
               Complete History
             </p>
             <p className="text-gray-400">
@@ -63,8 +66,9 @@ function Main() {
       <p className="text-gray-400 mb-20">
         We’ve got the tools to boost your productivity.
       </p>
-      <div className="flex flex-col gap-10">
-        <div className="flex flex-col gap-4 items-center">
+      <div className="flex flex-col gap-10 md:flex-row">
+        <div className="flex flex-col gap-4 items-center
+          ">
           <img src={blackListIcon} alt="black list icon" />
           <p className="text-2xl font-bold text-gray-600 mb-2">
             Create blacklists
@@ -93,7 +97,7 @@ function Main() {
           </p>
         </div>
       </div>
-      <div className="flex flex-col items-center gap-16 my-20">
+      <div className="flex flex-col items-center gap-16 my-20 md:grid md:grid-cols-4">
         <img src={googleLogo} alt="google logo" className="max-w-30"/>
         <img src={ibmLogo} alt="IBM logo" className="max-w-30"/>
         <img src={microsoftLogo} alt="Microsoft logo" className="max-w-30" />
@@ -103,18 +107,20 @@ function Main() {
       <p className="text-3xl font-bold text-gray-600 mb-2">
         Clipboard for iOS and Mac OS
       </p>
-      <p className="text-gray-400 mb-4">
+      <p className="text-gray-400 mb-4  max-w-100">
         Available for free on the App Store. Download for Mac or iOS, sync with iCloud 
         and you’re ready to start adding to your clipboard.
       </p>
-      <button className="bg-teal-400 mt-4 p-2 rounded-full text-white w-full text-xl
-        font-bold shadow-md cursor-pointer">
-        Download for iOS
-      </button>
-      <button className="bg-indigo-400 mt-4 p-2 rounded-full text-white w-full text-xl
-        font-bold shadow-md cursor-pointer">
-        Download for Mac
-      </button>
+      <div className="md:flex md:gap-4 w-1/2">
+        <button className="bg-teal-400 mt-4 p-2 rounded-full text-white w-full text-xl
+          font-bold shadow-md cursor-pointer">
+          Download for iOS
+        </button>
+        <button className="bg-indigo-400 mt-4 p-2 rounded-full text-white w-full text-xl
+          font-bold shadow-md cursor-pointer">
+          Download for Mac
+        </button>
+      </div>
     </div>
   )
 }
