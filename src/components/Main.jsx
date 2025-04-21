@@ -112,7 +112,7 @@ function Main() {
         Available for free on the App Store. Download for Mac or iOS, sync with iCloud 
         and you’re ready to start adding to your clipboard.
       </p>
-      <div className="md:flex md:gap-4 w-1/2 lg:w-1/3">
+      <div className="md:flex md:gap-4 md:w-1/2 lg:w-1/3">
         <button className="bg-teal-400 mt-4 p-2 rounded-full text-white w-full text-xl
           font-bold shadow-md cursor-pointer hover:bg-teal-300">
           Download for iOS
